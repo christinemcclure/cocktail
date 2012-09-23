@@ -16,7 +16,7 @@
     <%= f.text_field :name %>
   </div>
 
-  <div class="ingredient">
+  <div class="field">
     <%= f.label :ingredient %><br />
     <%= select("ingredient", "ingredient_id", Ingredient.all.collect {|i| [ i.name, i.id ] })%>
   </div>
