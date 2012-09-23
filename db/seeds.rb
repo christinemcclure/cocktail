@@ -15,3 +15,11 @@ Ingredient.create(:name => "lemon")
 Ingredient.create(:name => "orange")
 Ingredient.create(:name => "mint")
 Ingredient.create(:name => "basil")
+
+Measure.delete_all
+Measure.create(:measure => 'ounce')
+Measure.create(:measure => 'jigger')
+Measure.create(:measure => 'slice')
+Measure.create(:measure => 'shot')
+Measure.create(:measure => 'spash')
+Measure.create(:measure => 'sprig')
