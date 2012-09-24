@@ -17,6 +17,8 @@
   </div>
 
   <div class="field">
+    <%= f.label :measure %><br />
+    <%= select("measure", "measure_id", Measure.all.collect {|m| [ m.measure, m.id ] })%>
     <%= f.label :ingredient %><br />
     <%= select("ingredient", "ingredient_id", Ingredient.all.collect {|i| [ i.name, i.id ] })%>
   </div>
